@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop – Elegance & Thread</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="premium-nav">
+  <div class="brand">Elegance & Thread</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Shop</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+</header>
+
+<h2 class="section-title">Our Collection</h2>
+<div class="filter-bar">
+  <input id="searchInput" type="text" placeholder="Search product..." oninput="renderProducts()">
+  <select id="categorySelect" onchange="renderProducts()">
+    <option value="all">All Categories</option>
+    <option value="women">Women</option>
+    <option value="men">Men</option>
+    <option value="accessories">Accessories</option>
+  </select>
+</div>
+
+<div id="productGrid" class="product-grid-premium"></div>
+<a href="cart.html" class="btn-premium center">Go to Cart →</a>
+
+</body>
+</html>
